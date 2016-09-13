@@ -1,0 +1,49 @@
+# Project_web
+
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <title>overzicht</title>
+</head>
+    <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href='#'>home</a></li>
+                <li><a href='#'>profiel</a></li>
+                <li><a href='#'>contact</a></li>
+            </ul>
+            <input type="text" name="search" placeholder="zoeken..">
+        </nav>
+    </header>
+        <h1>Registreer je hier!</h1>
+        
+        <fieldset>
+            <legend>Persoonlijke gegevens</legend>
+            <p>Voornaam:</p><input type="text" name="voornaam">
+            <p>Tussenvoegsel:</p><input type="text" name="voornaam">
+            <p>Achternaam:</p><input type="text" name="achternaam">
+            <p>Geboortedatum:</p><input type="date" name="Geboortedatum">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Adres</legend>
+            <p>Straat:</p><input type="text" name="voornaam">
+            <p>Postcode:</p><input type="text" name="voornaam">
+            <p>plaats:</p><input type="text" name="voornaam">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Contactgegevens</legend>
+            <p>Emailadres:</p><input type="text" name="voornaam">
+            <p>Telefoonnummer:</p><input type="number" name="voornaam">
+            <p>Wachtwoord:</p><input type="text" name="voornaam">
+            <p>Herhaal wachtwoord:</p><input type="text" name="voornaam">
+        </fieldset>    
+        <button type="button" onclick="alert('U bent geregistreerd!')">Registreer</button>
+        
+        <footer><p>booki 2016</p></footer>
+    </body>
+</html>
