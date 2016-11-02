@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <title>overzicht</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="boers">
+    <header>
+        <a href="index.html"><img alt="logo" src="beeld/ic_logo_transavia.svg"></a>
+        <a href="aanmeld.html"><img class="profile" alt="profile" src="beeld/profile.svg"></a>
+        <nav>
+            <ul>
+                <li><a href='index.html'>home</a></li>
+                <li><a href='aanmeld.html'>aanmelden</a></li>
+                <li><a href='#'>contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+        <img alt="boers" class="desktop" src="beeld/boers_desktop.jpg">
+        <img alt="boers" class="mobile" src="beeld/boers_mobile.jpg">
+    
+    </body>
+</html>
