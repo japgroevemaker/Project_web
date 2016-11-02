@@ -1,0 +1,11 @@
+//bron: http://codepen.io/naoya-mashiko/pen/yaqrkX//
+
+var hearts = document.querySelectorAll('.heart');
+
+for (var i = 0; i < hearts.length; ++i) {
+      
+  hearts[i].addEventListener('click', function () {
+      this.classList.toggle('loved');
+  }, false);
+
+}
