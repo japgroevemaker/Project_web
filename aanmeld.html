@@ -3,45 +3,61 @@
 
 <head>
     <meta charset="utf-8">
-    <title>overzicht</title>
+    <title>Aanmelden</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-    <body>
+
+<body>
     <header>
+        <a href="index.html"><img alt="logo" src="beeld/ic_logo_transavia.svg"></a>
+        <a href="aanmeld.html"><img class="profile" alt="profile" src="beeld/profile.svg"></a>
         <nav>
             <ul>
-                <li><a href='#'>home</a></li>
-                <li><a href='#'>profiel</a></li>
+                <li><a href='index.html'>home</a></li>
+                <li><a href='aanmeld.html'>aanmelden</a></li>
                 <li><a href='#'>contact</a></li>
             </ul>
-            <input type="text" name="search" placeholder="zoeken..">
         </nav>
     </header>
-        <h1>Registreer je hier!</h1>
-        
-        <fieldset>
-            <legend>Persoonlijke gegevens</legend>
-            <p>Voornaam:</p><input type="text" name="voornaam">
-            <p>Tussenvoegsel:</p><input type="text" name="voornaam">
-            <p>Achternaam:</p><input type="text" name="achternaam">
-            <p>Geboortedatum:</p><input type="date" name="Geboortedatum">
-        </fieldset>
-        
-        <fieldset>
-            <legend>Adres</legend>
-            <p>Straat:</p><input type="text" name="voornaam">
-            <p>Postcode:</p><input type="text" name="voornaam">
-            <p>plaats:</p><input type="text" name="voornaam">
-        </fieldset>
-        
-        <fieldset>
-            <legend>Contactgegevens</legend>
-            <p>Emailadres:</p><input type="text" name="voornaam">
-            <p>Telefoonnummer:</p><input type="number" name="voornaam">
-            <p>Wachtwoord:</p><input type="text" name="voornaam">
-            <p>Herhaal wachtwoord:</p><input type="text" name="voornaam">
-        </fieldset>    
-        <button type="button" onclick="alert('U bent geregistreerd!')">Registreer</button>
-        
-        <footer><p>booki 2016</p></footer>
-    </body>
+
+    <form class="registration">
+
+        <legend>Persoonlijke gegevens</legend>
+        <label>Voornaam:</label>
+        <input type="text" name="first_name" placeholder="Jan" required>
+        <label>Achternaam:</label>
+        <input type="text" name="last_name" placeholder="Vries" required>
+        <label>Geboortedatum:</label>
+        <input type="date" name="birthdate" required>
+
+        <legend>Adres</legend>
+        <label>Straat:</label>
+        <input type="text" name="street" placeholder="Voorbeeldstraat" required>
+        <label>Postcode:</label>
+        <input type="text" name="zip_code" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])" placeholder="1234 AB" required>
+        <label>plaats:</label>
+        <input type="text" name="town" placeholder="Voorbeeldstad" required>
+
+        <legend>Contactgegevens</legend>
+        <label>Emailadres:</label>
+        <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="jandevries@transavia.nl" required>
+        <div class="requirements1">Voer een geldig emailadres in.</div>
+        <label>Telefoonnummer:</label>
+        <input type="number" name="phonenumer" placeholder="061234567" required>
+        <label>Wachtwoord:</label>
+        <input type="password" name="password" placeholder="Kies je wachtwoord" pattern="[A-Z a-z].{6,}" required>
+        <div class="requirements2">Je wachtwoord moet minstens 6 karakters lang zijn en een hoofdletter bevatten.</div>
+
+        <input type="submit" value="Registreer!">
+
+    </form>
+
+    <form>
+        <h1>Ben je ergens naar opzoek?</h1>
+        <input type="text" name="search" placeholder="zoeken..">
+    </form>
+
+</body>
+
 </html>
