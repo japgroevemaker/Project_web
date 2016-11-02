@@ -1,0 +1,584 @@
+@font-face {
+    font-family: 'Nexa';
+    src: url(../fonts/Nexa%20Bold.otf);
+    src: url(../fonts/Nexa%20Bold.otf);
+}
+
+.desktop {
+    display: none;
+}
+
+.mobile {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.back-to-top {
+    position: fixed;
+    border-radius: 1em;
+    bottom: 2em;
+    right: 1em;
+    width: 1em;
+    padding: 1em;
+    background-color: #ccc;
+}
+
+.like {
+    padding: 1em;
+    background-color: blue;
+    border-radius: 10em;
+    border-style: none;
+    background-image: url("/beeld/duim_los.svg");
+}
+
+body {
+    max-width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url("/beeld/Greece.jpg");
+    background-repeat: no-repeat;
+    background-color: #F4E6D7;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+}
+
+header img {
+    width: 10em;
+    margin: 0.5em;
+}
+
+.profile {
+    width: 10%;
+    margin: 0.5em;
+    padding-left: 3.5em;
+}
+
+li {
+    width: 100%;
+    list-style-type: none;
+}
+
+a {
+    color: #00d679;
+    text-decoration: none;
+    margin: 1em;
+    font-family: 'Nexa', sans-serif;
+}
+
+nav {
+    width: 99%;
+    display: none;
+}
+
+ul {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.button {
+    background-color: #ff2f68;
+    font-family: 'Nexa bold', sans-serif;
+    padding: 0.7em 2em 0.7em 2em;
+    box-shadow: inset 0 -.1875em .0625em #ca2b55;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 1em;
+    text-align: center;
+}
+
+.button-categories {
+    background-color: #ff2f68;
+    font-family: nexa bold, sans-serif;
+    padding: 0.7em 1.5em 0.7em 1.5em;
+    box-shadow: inset 0 -.1875em .0625em #ca2b55;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 1em;
+}
+
+.categories {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.categories>h2 {
+    position: absolute;
+    opacity: 0;
+}
+
+.stories>article {
+    width: 75%;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.stories>h2 {
+    position: absolute;
+    opacity: 0;
+}
+
+article>footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    width: 90%;
+}
+
+article>footer>h2 {
+    font-family: nexa bold, sans-serif;
+    color: #000;
+    font-weight: 400;
+    font-size: 0.8em;
+    margin: 1.5em;
+}
+
+article>footer>img {
+    width: 6em;
+    height: 5em;
+}
+
+.registration {
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0.7em;
+    border-radius: 1em;
+    background-color: #fff;
+}
+
+.registration>legend {
+    font-family: nexa bold, sans-serif;
+    font-size: 1.5em;
+    color: #2b0899;
+    margin-bottom: 0.5em;
+}
+
+.registration h2 {
+    font-family: nexa bold, sans-serif;
+    font-size: 1em;
+    color: #ff2f68;
+}
+
+.registration>label {
+    font-family: nexa bold, sans-serif;
+}
+
+.registration>input[type="text"],
+.registration>input[type="date"],
+.registration>input[type="password"],
+.registration>input[type="number"],
+.registration>input[type="email"] {
+    margin: 0.5em 0em 1.5em 0em;
+    height: 1.5em;
+    width: 90%;
+    background: #eee;
+    padding: 0.5em;
+    font-family: nexa bold, sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.registration>input:focus {
+    outline: 0;
+    background-color: #fff;
+}
+
+.registration>input[type="text"]:valid,
+.registration>input[type="password"]:valid,
+.registration>input[type="number"]:valid,
+.registration>input[type="date"]:valid,
+.registration>input[type="email"]:valid {
+    background-color: #ccffcc;
+}
+
+.registration>input[type="password"]:valid ~.requirements2 {
+    opacity: 0;
+}
+
+.registration>input[type="password"]:invalid:focus {
+    background-color: #ff9999;
+}
+
+.registration>input[type="password"]:invalid:focus ~.requirements2 {
+    opacity: 1;
+    height: 3em;
+}
+
+.registration>input[type="email"]:valid ~.requirements1 {
+    opacity: 0;
+}
+
+.registration>input[type="email"]:invalid:focus {
+    background-color: #ff9999;
+}
+
+.registration>input[type="email"]:invalid:focus ~.requirements1 {
+    opacity: 1;
+    height: 3em;
+}
+
+.registration>input[type="submit"] {
+    background-color: #ff2f68;
+    font-family: 'Nexa bold', sans-serif;
+    font-size: 1em;
+    padding: 0.7em 2em 0.7em 2em;
+    box-shadow: inset 0 -.1875em .0625em #ca2b55;
+    color: #fff;
+    border-radius: 1em;
+    border-style: none;
+    margin: auto;
+    width: 50%
+}
+
+.requirements1 {
+    font-family: sans-serif;
+    overflow: hidden;
+    font-style: italic;
+    color: red;
+    opacity: 0;
+    transition: 0.28s;
+    height: 0;
+}
+
+.requirements2 {
+    font-family: sans-serif;
+    overflow: hidden;
+    font-style: italic;
+    color: red;
+    opacity: 0;
+    transition: 0.28s;
+    height: 0;
+}
+
+.stories {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+article>h1 {
+    display: none;
+    position: absolute;
+}
+
+article>header>h2 {
+    font-family: nexa bold, sans-serif;
+    font-size: 1.7em;
+    font-weight: 800;
+    color: #2b0899;
+}
+
+article>h3 {
+    font-family: avenir;
+    color: #ff2f68;
+    font-size: 1em;
+}
+
+article p {
+    font-family: avenir;
+    font-size: 1.2em;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5em;
+    background-color: #F8F8F8;
+}
+
+form>input {
+    height: 2.5em;
+    width: 100%;
+    border-radius: 1em;
+}
+
+form h1 {
+    font-family: nexa bold, sans-serif;
+    color: #2b0899;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    background-color: #fff;
+    height: 10em;
+}
+
+
+/*hier begint de instellingen voor het hartje*/
+
+
+/*hier begint de instellingen voor het hartje*/
+
+
+/*hier begint de instellingen voor het hartje*/
+
+.centreer {
+    display: flex;
+    justify-content: center;
+    width: 10em;
+    padding: 1em;
+}
+
+.heart {
+    display: block;
+    width: 1em;
+    height: 1em;
+    font-size: 24px;
+}
+
+.heart .heart-inner,
+.heart .heart-inner::before,
+.heart .heart-inner::after {
+    background-color: #ccc;
+}
+
+.heart.loved .heart-inner,
+.heart.loved .heart-inner::before,
+.heart.loved .heart-inner::after {
+    background-color: #f33;
+}
+
+.heart.loved {
+    -webkit-animation: loved 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation: loved 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.heart-inner {
+    display: block;
+    width: 1em;
+    height: 1em;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.heart-inner:before,
+.heart-inner:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
+}
+
+.heart-inner::before {
+    left: 0;
+    top: -50%;
+}
+
+.heart-inner::after {
+    left: -50%;
+    top: 0;
+}
+
+@-webkit-keyframes loved {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    25% {
+        -webkit-transform: scale(0.6, 0.8);
+        transform: scale(0.6, 0.8);
+    }
+    35% {
+        -webkit-transform: scale(0.8, 0.6);
+        transform: scale(0.8, 0.6);
+    }
+    70% {
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes loved {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    25% {
+        -webkit-transform: scale(0.6, 0.8);
+        transform: scale(0.6, 0.8);
+    }
+    35% {
+        -webkit-transform: scale(0.8, 0.6);
+        transform: scale(0.8, 0.6);
+    }
+    70% {
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+/*boers*/
+
+
+/*boers*/
+
+
+/*boers*/
+
+.boers {
+    background-color: #000;
+}
+
+
+/* hier beginnen de responsive instellingen*/
+
+
+/* hier beginnen de responsive instellingen*/
+
+
+/* hier beginnen de responsive instellingen*/
+
+@media(min-width: 25em) {
+    body {
+        max-width: 100%;
+    }
+    header {
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    header img {
+        width: 10em;
+    }
+    nav {
+        display: none;
+    }
+    nav a {
+        font-size: 1.9em;
+    }
+    input {
+        height: 1em;
+        display: flex;
+        align-content: center;
+        border-radius: 0.5em;
+    }
+    .categories {
+        width: 100%;
+        align-content: center;
+        display: flex;
+    }
+    a {
+        font-family: nexa bold, sans-serif;
+        color: #00d679;
+    }
+    ul {
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+    .stories {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .stories article {
+        max-width: 15em;
+        padding: 1.5em;
+    }
+    .profile {
+        width: 7%;
+        padding-left: 20em;
+    }
+    .registration {
+        width: 25em;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    form input {
+        width: 30%;
+        margin: auto;
+    }
+    article img {
+        width: 35%;
+    }
+    article {
+        font-size: 1.4em;
+        margin: 1.2em;
+    }
+    .button {
+        width: 50%;
+        text-align: center;
+        max-height: 1em;
+    }
+    .stories p {
+        font-size: 1em;
+    }
+}
+
+@media(min-width: 45em) {
+    body {
+        width: 100%;
+    }
+    header {
+        width: 100%
+    }
+    header img {
+        width: 50%;
+    }
+    .desktop {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    nav {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0.5em;
+        position: absolute;
+    }
+    .profile {
+        display: none;
+    }
+    .stories article {
+        transition: all .2s ease-in-out;
+        width: 50%;
+    }
+    .stories article:hover {
+        transform: scale(1.01);
+    }
+}
